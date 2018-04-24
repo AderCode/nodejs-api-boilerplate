@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-api-boilerplate",
+  "version": "1.0.0",
+  "description": "Initial commit",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AderCode/nodejs-api-boilerplate.git"
+  },
+  "author": "Matthew Aderhold",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AderCode/nodejs-api-boilerplate/issues"
+  },
+  "homepage": "https://github.com/AderCode/nodejs-api-boilerplate#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "nodemon": "^1.17.3"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
