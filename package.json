@@ -2,11 +2,12 @@
   "name": "nodejs-api-boilerplate",
   "version": "1.0.0",
   "description": "Initial commit",
-  "main": "server/index.js",
+  "main": "server/lib/index.js",
   "scripts": {
     "build:server": "babel ./server/src -d ./server/lib",
     "clean:server": "rimraf ./server/lib",
     "dev": "npm run clean:server && npm run build:server && concurrently -r -k \"npm run watch:server\" \"nodemon --watch server/lib --delay 1\"",
+    "start": "npm run clean:server && npm run build:server && npm run start:server",
     "start:server": "node server/lib/index.js",
     "watch:server": "babel ./server/src -w -d ./server/lib"
   },
@@ -26,8 +27,11 @@
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "express": "^4.16.3",
-    "morgan": "^1.9.0"
+    "morgan": "^1.9.0",
+    "rimraf": "^2.6.2"
   }
 }
