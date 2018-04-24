@@ -4,7 +4,11 @@
   "description": "Initial commit",
   "main": "server/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:server": "babel ./server/src -d ./server/lib",
+    "clean:server": "rimraf ./server/lib",
+    "dev": "npm run clean:server && npm run build:server && concurrently -r -k \"npm run watch:server\" \"nodemon --watch server/lib --delay 1\"",
+    "start:server": "node server/lib/index.js",
+    "watch:server": "babel ./server/src -w -d ./server/lib"
   },
   "repository": {
     "type": "git",
@@ -19,6 +23,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "concurrently": "^3.5.1",
     "nodemon": "^1.17.3"
   },
   "dependencies": {
