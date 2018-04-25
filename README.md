@@ -15,7 +15,7 @@ Basic NodeJS Express Server API
 Dish up you HTML in client
 Configure api routes in server/src/routes (be sure to add them to server/src/routes/index.js)
 
-### Dependencies
+## Dependencies
 
 - Babel
   - to transpile es2015+ to es2012
@@ -26,7 +26,7 @@ Configure api routes in server/src/routes (be sure to add them to server/src/rou
 - Rimraf
   - cross platform Unix `rm -rf` command for non OS specific execution
 
-### Dev Dependencies
+## Dev Dependencies
 
 - Concurrently
   - for running more than one command at the same time
