@@ -2,12 +2,10 @@ import { Router } from 'express';
 
 let testData = [
     {
-        name: 'Jackson',
-        age: 25
+        test: 'Successful'
     },
     {
-        name: 'Matt',
-        age: 40
+        test: 'Successful'
     }
 ];
 
