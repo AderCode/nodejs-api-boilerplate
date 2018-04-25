@@ -18,7 +18,7 @@ Configure api routes in server/src/routes (be sure to add them to server/src/rou
 ## Dependencies
 
 - Babel
-  - to transpile es2015+ to es2012
+  - to transpile es6+ to es5 for multi-browser compatibility
 - Express
   - Wouldn't be much of an express server without it
 - Morgan
