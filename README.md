@@ -1,14 +1,14 @@
 # NodeJS Boilerplate
 
-## Basic NodeJS Express Server API
+Basic NodeJS Express Server API
 
-### Install for Development
+## Install for Development
 
 - npm install
 - npm run dev
 - Test in browser or postman localhost:3000/api/test
 
-### Production
+## Production
 
 - npm run start
 
