@@ -7,11 +7,9 @@ Object.defineProperty(exports, "__esModule", {
 var _express = require('express');
 
 var testData = [{
-    name: 'Jackson',
-    age: 25
+    test: 'Successful'
 }, {
-    name: 'Matt',
-    age: 40
+    test: 'Successful'
 }];
 
 var router = (0, _express.Router)();
